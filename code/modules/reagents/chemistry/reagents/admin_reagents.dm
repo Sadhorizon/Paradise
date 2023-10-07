@@ -62,6 +62,9 @@
 		M.bodytemperature = M.dna.species.body_temperature
 	else
 		M.bodytemperature = BODYTEMP_NORMAL
+	for(var/datum/reagent/R in M.reagents.reagent_list)
+		if(R != src)
+			M.reagents.remove_reagent(R.id,20)
 	return STATUS_UPDATE_ALL
 
 /datum/reagent/medicine/adminordrazine/nanites
