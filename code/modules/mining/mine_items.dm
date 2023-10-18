@@ -47,7 +47,7 @@
 	name = "miner's equipment"
 	icon_state = "mining"
 	open_door_sprite = "mining_door"
-	req_access = list(ACCESS_MINING)
+	req_access = list(ACCESS_MINING_STATION)
 
 /obj/structure/closet/secure_closet/miner/populate_contents()
 	new /obj/item/stack/sheet/mineral/sandbags(src, 5)
